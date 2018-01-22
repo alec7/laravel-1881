@@ -26,7 +26,7 @@ In `config/app.php`:
 Then publish configurations:
 
 ```
-$ php artisan vendor:publish
+$ php artisan vendor:publish --provider="Laravel\DM1881\DM1881ServiceProvider"
 ```
 
 You now have `config/dm1881.php`.
