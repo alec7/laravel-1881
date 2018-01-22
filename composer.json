@@ -2,7 +2,7 @@
   "name": "andersevenrud/laravel-1881",
   "description": "Laravel Service Provider for 1881",
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "authors": [
     {
       "name": "Anders Evenrud",
@@ -12,12 +12,22 @@
   ],
   "require": {
     "php": ">=5.6.4",
-    "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*",
-    "andersevenrud/1881": "^0.5.2"
+    "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*",
+    "andersevenrud/1881": "^0.5.5"
   },
   "autoload": {
     "psr-4": {
       "Laravel\\DM1881\\": "src"
     }
-  }
+  },
+  "extra": {
+    "laravel": {
+        "providers": [
+            "Laravel\\DM1881\\DM1881ServiceProvider"
+        ],
+        "aliases": {
+            "DM1881": "Laravel\\DM1881\\Facades\\DM1881"
+        }
+    }
+}
 }

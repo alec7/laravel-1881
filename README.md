@@ -10,9 +10,12 @@ composer require andersevenrud/laravel-1881
 
 ## Configuration
 
-In `config/app.php`:
+In Laravel 5.5 and up, the package will automatically register the service provider and facade.
+
+In L5.4 or below start by registering the package's the service provider and facade:
 
 ```
+// config/app.php
 
 'providers' => [
     Laravel\DM1881\DM1881ServiceProvider::class,
@@ -44,6 +47,7 @@ function something() {
 ```
 ## Changelog
 
+* **1.0.3** - Updated dependencies + added L5.5 auto discovery
 * **1.0.2** - Updated dependencies
 * **1.0.1** - Updated composer.json
 * **1.0.0** - Initial release
